@@ -24,7 +24,7 @@ public class CustomerManager {
     private EntityManager em;
 
     public List<Customer> getAllCustomers() {
-        Query query = em.createNamedQuery("Customer.findAlL");
+        Query query = em.createNamedQuery("Customer.findAll");
         return query.getResultList();
     }
 
